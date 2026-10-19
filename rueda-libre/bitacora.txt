@@ -1,0 +1,8 @@
+Lunes 19 de Octubre
+
+HTML & CSS
+
+**1. Reto Kilometro , el repositorio y la pagina base**
+
+En la siguiente pestaña me enseñan a utilizar funciones basicas de HTML
+la primer evidencia es "Network", es una imagen.
