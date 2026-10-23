@@ -9,3 +9,13 @@ la primer evidencia es "Network", es una imagen.
 
 ** 2. Algo importante que debo recordar es que las dimensiones deben estar en css width.
 
+**Peticion
+
+Petición del documento
+- URL completa: http://127.0.0.1:5500/rueda-libre-v1/index.html
+- Protocolo: http:
+- Host:127.0.0.1
+- Puerto:5500
+- Ruta:rueda-libre-v1/index.html
+- metodo = GET 
+- Codigo de estado = 200
