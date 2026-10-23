@@ -19,3 +19,17 @@ Petición del documento
 - Ruta:rueda-libre-v1/index.html
 - metodo = GET 
 - Codigo de estado = 200
+
+
+*** Organizar los <h>
+
+Siempre es importante organizarlo segun la prioridad, por ejemplo de <h1> a <h2>, nunca, nunca <h1> a <h3">
+
+h1  Rueda Libre
+  h2  ¿Quiénes somos?
+  h2  Nuestros servicios
+    h3  Alquiler de bicicletas
+    h3  Recorridos guiados
+    h3  Taller básico
+  h2  ¿Cómo alquilar?
+  h2  Encuéntranos
