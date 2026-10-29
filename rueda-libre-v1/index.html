@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alquiler de bicicletas en Medellín, Colombia, tenemos bicicletas de todo tipo para todos, convenio con encicla">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
-    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -13,7 +16,7 @@
         <h1>Rueda Libre</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="activo">Inicio</a></li>
                 <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
                 <li><a href="paginas/reservas.html">Reservas</a></li>
             </ul>
@@ -21,9 +24,11 @@
     </header>
 
     <main>
-
-        <img src="img/bici.webp" alt="Bicicleta naranja y negra de alquiler" width="300">
-        <p>Alquiler de bicicletas en Medellín, Colombia, te invitamos a conocer. Visítanos, mira <a href="#encuentranos">dónde encontrarnos</a>.</p>
+    
+    <section class="portada">
+    <img src="img/logofinal.jpg" alt="Bicicleta naranja y negra de alquiler" width="300">
+    <p>Alquiler de bicicletas en Medellín, Colombia, te invitamos a conocer. Visítanos, mira <a href="#encuentranos">dónde encontrarnos</a>.</p>
+    </section>
 
         <section>
             <h2>¿Quiénes somos?</h2>
@@ -33,26 +38,28 @@
         <section>
             <h2>Nuestros servicios</h2>
             <p>Ofrecemos bicicletas de todo tipo para todos los gustos y necesidades.</p>
-        <div class="contenedor-articulos">
+        <div class="contenedor-tarjetas">
             <article class="tarjeta">
                 <h3>Alquiler de bicicletas</h3>
-                <img src="img/cicla.jpg" alt="Bicicleta urbana azul sobre fondo blanco" width="300">
+                <img src="img/AlquilerBicletas.jpg" alt="Bicicleta urbana azul sobre fondo blanco">
                 <p>Alquilamos bicicletas urbanas, de montaña y eléctricas. Todo alquiler <strong>incluye casco y candado</strong>.</p>
                 <p><a href="paginas/tarifas.html">Consulta las tarifas de alquiler</a></p>
             </article>
 
             <article class="tarjeta">
                 <h3>Recorridos guiados</h3>
-                <img src="img/ruta.jpg" alt="Carretera con montañas al fondo y sol al atardecer" width="300">
+                <img src="img/RecorridosGuiados.jpg" alt="Carretera con montañas al fondo y sol al atardecer">
                 <p>Hacemos recorridos por los barrios de la ciudad de Medellín.</p>
                 <p><a href="paginas/tarifas.html#recorridos">Ver tabla de recorridos y precios</a></p>
             </article>
 
-    
-            <article class=""   >
+            <article class="tarjeta">
                 <h3>Taller básico</h3>
+                <img src="img/TallerBasico.jpg" alt="Persona reparando una bicicleta">
                 <p>Aprende los fundamentos del mantenimiento y reparación de bicicletas.</p>
+                
             </article>
+        </div>
 
             <h3>Beneficios de alquilar con nosotros</h3>
             <ul>
@@ -60,8 +67,9 @@
                 <li>Bicicletas urbanas, de montaña y eléctricas</li>
                 <li>Recorridos guiados por la ciudad</li>
             </ul>
+            
         </section>
-        </div>
+
         <section>
             <h2>¿Cómo alquilar?</h2>
             <p>Alquilar con nosotros es fácil, sigue estos pasos.</p>

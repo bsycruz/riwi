@@ -33,3 +33,24 @@ h1  Rueda Libre
     h3  Taller básico
   h2  ¿Cómo alquilar?
   h2  Encuéntranos
+
+
+Reto: La identidad de Rueda Libre (variables, fuentes y herencia)
+
+- Hoja css/styles.css enlazada en las tres paginas (css/ en el index, ../css/ en paginas/).
+- Google Fonts (Montserrat 700, Open Sans 400 y 600) cargadas antes de styles.css.
+- Herencia comprobada en DevTools (Styles y Computed) sobre un <p>:
+  * Se hereda: ______ (ej. font-family / color, vienen del body)
+  * No se hereda: ______ (ej. border; al ponerselo al body el <p> no lo recibe)
+
+
+Reto: El box model (tamano y espaciado)
+
+- box-sizing: border-box con reset universal (*, ::before, ::after).
+- Medicion del ancho total de una .tarjeta en Computed:
+  * Con content-box: ______ px
+  * Con border-box:  ______ px
+  * Diferencia esperada: 34 px = relleno 2 x 16 px + borde 2 x 1 px.
+    (El ancho exacto depende de la ventana porque la tarjeta usa flex.)
+- main centrado con max-width en rem; la portada usa min-height en vh.
+- Menu en fila con display: inline-block.

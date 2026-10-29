@@ -1,58 +1,36 @@
+
 :root {
   
-  --color-fondo:#d8e0e8;
-  --color-texto: #070707;
-  --color-primario: #139641;
-  --color-secundario: #000000;
-  --color-acento: #000000;
+  --color-verde-ruta: #1E7A4F;     /* botones  enlaces */
+  --color-naranja-pedal: #F39A2B;  /* destacados y botones secundarios */
+  --color-azul-noche: #14213D;     /* títulos y encabezado */
+  --color-crema: #FAF6EF;          /* fondo general */
+  --color-gris-asfalto: #5B6470;   /* texto secundario */
 
- 
+  /* Roles */
+  --color-fondo: var(--color-crema);
+  --color-texto: var(--color-azul-noche);
+  --color-texto-secundario: var(--color-gris-asfalto);
+  --color-primario: var(--color-verde-ruta);
+  --color-secundario: var(--color-azul-noche);
+  --color-acento: var(--color-naranja-pedal);
+
+  --color-superficie: #ffffff;
+  --color-borde: rgba(20, 33, 61, 0.15);
+  --color-sombra: rgba(20, 33, 61, 0.08);
+
+  /* Tipografías */
   --fuente-titulos: 'Montserrat', sans-serif;
   --fuente-textos: 'Open Sans', sans-serif;
 
-  
-  --espacio-sm: 2.0rem;
-  --espacio-md: 2.0rem;
-  --espacio-lg: 2.0rem;
-} 
-
-
-body {
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
-  font-family: var(--fuente-textos);
-}
-
-h1{ 
-  font-family: var(--fuente-titulos);
-  color: var(--color-primario);
-}
-
-h2, h3 { 
-  font-family: var(--fuente-titulos);
-  color: var(--color-secundario);
+  /* Escala de espaciado */
+  --espacio-sm: 0.5rem;
+  --espacio-md: 1rem;
+  --espacio-lg: 2rem;
 }
 
 
-/** Por el momenot no se como estara el orden para colocar el boton de navegacion y menu" **/
-
-#menu a {
-  color: var(--color-texto);
-  text-decoration: none;
-}
-
-#menu a.activo {
-  color: var(--color-secundario);
-  font-weight: 600;
-}
-
-#menu a:hover,
-#menu a:focus {
-  color: var(--color-primario);
-  text-decoration: underline;
-}
-
-/* reset universal #CAJA*/
+/* El ancho incluye relleno y borde (border-box) */
 *,
 *::before,
 *::after {
@@ -61,29 +39,73 @@ h2, h3 {
   padding: 0;
 }
 
-/* Estilos para la 
 
-tabla de tarifas */
-table {
-  width: 100%;
-  border-collapse: collapse; 
-  margin-top: var(--espacio-md);
-  margin-bottom: var(--espacio-lg);
+/****** BASE Cuerpo contenido principal y títulos ***** */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-textos);
+  min-height: 100vh;
 }
 
-th, td {
-  padding: var(--espacio-sm) var(--espacio-md);
-  text-align: left;
-  border-bottom: 1px solid var(--color-primario);
+/* Centra el contenido y limita el largo de las líneas de texto *******/
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: var(--espacio-md);
 }
 
-th {
-  background-color: var(--color-primario);
-  color: var(--color-fondo);  
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-secundario);
 }
 
-/*  Organizar las tarjetas 
-*/
+
+/**
+  NAVEGACIÓ Opciones del menú en una fila
+ ****/
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: var(--espacio-md);
+}
+
+nav a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+}
+
+nav a.activo {
+  color: var(--color-secundario);
+  border-bottom: 2px solid var(--color-acento);
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-primario);
+  text-decoration: underline;
+}
+
+
+/*******
+   PORTADA
+ ****/
+.portada {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/***
+   COMPONENTES
+   Tarjetas de servicios y botones
+  ******/
 
 .contenedor-tarjetas {
   display: flex;
@@ -94,26 +116,33 @@ th {
 }
 
 .tarjeta {
-  background-color: #ffffff; /* Fondo blanco para contraste */
-  color: var(--color-texto);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  flex: 1 1 15rem;
   padding: var(--espacio-md);
-  flex: 1 1 250px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease; /* Pequeña animación suave */
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+  border: 1px solid var(--color-borde);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem var(--color-sombra);
+  transition: transform 0.2s ease;
 }
 
 .tarjeta:hover {
-  transform: translateY(-4px); /* Se eleva un poquito */
+  transform: translateY(-4px);
 }
-/* Estilo para los botones */
+
+/* La imagen ocupa todo el ancho de su tarjeta */
+.tarjeta img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .boton {
+  padding: var(--espacio-md) var(--espacio-lg);
   background-color: var(--color-primario);
-  color: #ffffff;
-  padding: var(--espacio-sm) var(--espacio-lg);
+  color: var(--color-crema);
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-family: var(--fuente-titulos);
   font-weight: 600;
   cursor: pointer;
@@ -123,4 +152,85 @@ th {
 .boton:hover,
 .boton:focus {
   background-color: var(--color-secundario);
+}
+
+/* Botón secundario y elementos destacados */
+.boton-secundario,
+.destacado {
+  background-color: var(--color-acento);
+  color: var(--color-azul-noche);
+}
+
+
+/* TABLA*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--espacio-md);
+  margin-bottom: var(--espacio-lg);
+}
+
+th,
+td {
+  padding: var(--espacio-sm) var(--espacio-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-primario);
+}
+
+th {
+  background-color: var(--color-primario);
+  color: var(--color-crema);
+}
+
+
+/*
+   8. FORMULARIO
+   Etiqueta sobre el campo, campos a todo el ancho ****/
+fieldset {
+  padding: var(--espacio-md);
+  margin-bottom: var(--espacio-lg);
+  border: 1px solid var(--color-primario);
+  border-radius: 0.5rem;
+}
+
+legend {
+  padding: 0 var(--espacio-sm);
+  font-family: var(--fuente-titulos);
+}
+
+form p {
+  margin-bottom: var(--espacio-md);
+}
+
+/* Solo las etiquetas de campos de texto van en su propia línea;
+   las de radio y checkbox se quedan junto a su control */
+
+form p > label:first-child {
+  display: block;
+  margin-bottom: var(--espacio-sm);
+  font-weight: 600;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: var(--espacio-sm);
+  border: 1px solid var(--color-texto-secundario);
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/******************
+   ENLACES
+  ***/
+main a {
+  color: var(--color-primario);
 }
