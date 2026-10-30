@@ -72,19 +72,19 @@ nav li {
   margin-right: var(--espacio-md);
 }
 
-nav a {
+#menu a {
   color: var(--color-texto-secundario);
   text-decoration: none;
 }
 
-nav a.activo {
+#menu a.activo {
   color: var(--color-secundario);
-  border-bottom: 2px solid var(--color-acento);
+  border-bottom: 2px solid var(--color-naranja-pedal);
   font-weight: 600;
 }
 
-nav a:hover,
-nav a:focus {
+#menu a:hover,
+#menu a:focus {
   color: var(--color-primario);
   text-decoration: underline;
 }
@@ -127,7 +127,7 @@ nav a:focus {
 }
 
 .tarjeta:hover {
-  transform: translateY(-4px);
+  transform: translateY(-0.25rem);
 }
 
 /* La imagen ocupa todo el ancho de su tarjeta */
@@ -233,4 +233,24 @@ textarea {
   ***/
 main a {
   color: var(--color-primario);
+}
+/**** Para los botones de reservar ahora****/
+ .boton-cta {
+  display: inline-block;
+  padding: var(--espacio-sm) var(--espacio-lg);
+  background-color: var(--color-verde-ruta);
+  color: var(--color-crema);
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.boton-cta:hover {
+  background-color: var(--color-azul-noche);
+}
+
+.boton-cta:focus {
+  outline: 2px solid var(--color-azul-noche);
+  outline-offset: 0.25rem;
 }
