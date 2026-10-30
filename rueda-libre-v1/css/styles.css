@@ -126,6 +126,22 @@ nav li {
   transition: transform 0.2s ease;
 }
 
+.tarjeta{
+  position: relative;
+
+}
+
+.etiqueta-bicielectrica {
+  position: absolute;
+  top: var(--espacio-sm);
+  right: var(--espacio-sm);
+  padding: 0.25rem var(--espacio-sm);
+  background-color: var(--color-naranja-pedal);
+  color: var(--color-azul-noche);
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
 .tarjeta:hover {
   transform: translateY(-0.25rem);
 }
@@ -254,3 +270,12 @@ main a {
   outline: 2px solid var(--color-azul-noche);
   outline-offset: 0.25rem;
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 0.125rem;
+  border-color: var(--color-verde-ruta)}
+
+  
