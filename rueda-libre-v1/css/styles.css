@@ -24,7 +24,7 @@
   --fuente-textos: 'Open Sans', sans-serif;
 
   /* Escala de espaciado */
-  --espacio-sm: 0.5rem;
+  --espacio-sm: 1rem;
   --espacio-md: 1rem;
   --espacio-lg: 2rem;
 }
@@ -55,12 +55,22 @@ main {
   padding: var(--espacio-md);
 }
 
-h1,
+
+h1 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-azul-noche);
+  text-align: center;
+  margin-bottom: var(--espacio-md);
+  
+}  
+ 
+
 h2,
 h3 {
   font-family: var(--fuente-titulos);
   color: var(--color-secundario);
 }
+
 
 
 /**
@@ -277,5 +287,25 @@ textarea:focus {
   outline: 2px solid var(--color-primario);
   outline-offset: 0.125rem;
   border-color: var(--color-verde-ruta)}
+
+
+
+.whatsapp {
+  position: fixed;
+  right: var(--espacio-md);
+  bottom: var(--espacio-md);
+  padding: var(--espacio-sm) var(--espacio-md);
+  background-color: var(--color-verde-ruta);
+  color: var(--color-crema);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem var(--color-sombra);
+}
+
+
+body {
+  padding-bottom: 10rem; 
+}
 
   
