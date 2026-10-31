@@ -24,7 +24,7 @@
   --fuente-textos: 'Open Sans', sans-serif;
 
   /* Escala de espaciado */
-  --espacio-sm: 1rem;
+  --espacio-sm: 0.5rem;
   --espacio-md: 1rem;
   --espacio-lg: 2rem;
 }
