@@ -29,6 +29,16 @@
   --espacio-lg: 2rem;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+ width: 100%;
+}
 
 /* El ancho incluye relleno y borde (border-box) */
 *,
@@ -77,9 +87,14 @@ h3 {
   NAVEGACIÓ Opciones del menú en una fila
  ****/
 nav li {
-  display: inline-block;
   list-style: none;
-  margin-right: var(--espacio-md);
+}
+
+#menu {
+  display: flex;
+  gap: var(--espacio-md);
+  flex-wrap: wrap;
+
 }
 
 #menu a {
@@ -98,7 +113,13 @@ nav li {
   color: var(--color-primario);
   text-decoration: underline;
 }
-
+/**Los bloques se organizan los que estan estan en el pie de pagina donde dice "rueda libre, correo ..., 2026**/
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
 /*******
    PORTADA
