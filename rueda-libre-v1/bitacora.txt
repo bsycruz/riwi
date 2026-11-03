@@ -54,3 +54,12 @@ Reto: El box model (tamano y espaciado)
     (El ancho exacto depende de la ventana porque la tarjeta usa flex.)
 - main centrado con max-width en rem; la portada usa min-height en vh.
 - Menu en fila con display: inline-block.
+
+
+#Semana 2
+
+reto 1
+Se organiza el flex-wrap porque me premite que los elementos que no caben bajen a otra linea.
+ 
+tambien en el H1 se organiza para dejarlo en todo el ancho "width: 100%" y tambien se dejo centrado con "text-align:center"
+

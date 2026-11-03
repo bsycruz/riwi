@@ -231,7 +231,7 @@ th {
 
 
 /*
-   8. FORMULARIO
+   FORMULARIO
    Etiqueta sobre el campo, campos a todo el ancho ****/
 fieldset {
   padding: var(--espacio-md);
@@ -329,4 +329,14 @@ body {
   padding-bottom: 10rem; 
 }
 
+.flota{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--espacio-md);
+}
   
+.flota .tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
