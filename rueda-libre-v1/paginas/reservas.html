@@ -26,11 +26,11 @@
 
         <h1>Reserva tu bicicleta</h1>
         <p>Escríbenos y reserva tu bicicleta llenando el formulario.</p>
-        <p>Correo de contacto: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
 
-        <section>
+        <div class="reserva">
+
+            <section>
             <h2>Formulario de reserva</h2>
-
             <form action="#" method="post">
 
                 <fieldset>
@@ -40,21 +40,24 @@
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre" required minlength="3">
                     </p>
-
+            <div class="fila-campos"> 
                     <p>
                         <label for="documento">Número de documento</label>
                         <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos">
                     </p>
 
                     <p>
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ejemplo: 3001234567">
+                    </p>
+                  
+            </div>
+            
+                    <p>
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" required>
                     </p>
 
-                    <p>
-                        <label for="celular">Celular</label>
-                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ejemplo: 3001234567">
-                    </p>
                 </fieldset>
 
                 <fieldset>
@@ -133,8 +136,10 @@
             <dt>Sábados, domingos y festivos</dt>
             <dd>6:00 a. m. a 2:00 p. m.</dd>
             </dl>
+            <p>Correo de contacto: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
         </aside>
 
+        </div>
     </main>
 
     <footer>
