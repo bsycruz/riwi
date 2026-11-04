@@ -33,6 +33,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -94,6 +95,7 @@ nav li {
   display: flex;
   gap: var(--espacio-md);
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 
@@ -116,7 +118,7 @@ nav li {
 /**Los bloques se organizan los que estan estan en el pie de pagina donde dice "rueda libre, correo ..., 2026**/
 footer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -127,7 +129,7 @@ footer{
 .portada {
   min-height: 50vh; /*Esto me prermite modificar la altura de la portada.*/
   display: grid; 
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:1fr;
   gap: var(--espacio-md);
   align-items: center;
 }
@@ -342,18 +344,59 @@ body {
 
 .galeria{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--espacio-md);
 }
 
 .reserva{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--espacio-md);
 }
 
 .fila-campos{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     gap: var(--espacio-md);
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .galeria,
+  .flota,
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fila-campos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+
+@media (min-width: 1200px) {
+  .portada {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .galeria,
+  .flota,
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

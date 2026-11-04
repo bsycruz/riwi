@@ -1,4 +1,4 @@
-Lunes 19 de  Octubre
+unes 19 de  Octubre
 
 HTML & CSS
 
@@ -63,3 +63,8 @@ Se organiza el flex-wrap porque me premite que los elementos que no caben bajen 
  
 tambien en el H1 se organiza para dejarlo en todo el ancho "width: 100%" y tambien se dejo centrado con "text-align:center"
 
+reto 4 
+
+Mobile-firts
+
+Uno de los problemas que tuve fue organzar en los fila-campos "grid-template-columns, donde yo estaba siendo redundante y escribi repeat(2,1fr), cuando solamente utilizando "1fr" era necesario y quedaba listo.
