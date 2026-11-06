@@ -124,7 +124,7 @@ footer{
 }
 
 /*******
-   PORTADA **Esto me permite dejar y modificar el logo de la bicicleta 
+   PORTADA **Esto me permite dejar y modificar el logo de la biciclew 
  ****/
 .portada {
   min-height: 50vh; /*Esto me prermite modificar la altura de la portada.*/
@@ -153,7 +153,7 @@ footer{
   background-color: var(--color-superficie);
   color: var(--color-texto);
   border: 1px solid var(--color-borde);
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: 0 0.25rem 0.375rem var(--color-sombra);
   transition: transform 0.2s ease;
 }
