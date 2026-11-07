@@ -341,11 +341,17 @@ body {
   padding-bottom: 10rem; 
 }
 
+/*** 
+
 .flota{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: var(--espacio-md);
 }
+
+
+
+**/
   
 .flota .tarjeta{
   display: flex;
