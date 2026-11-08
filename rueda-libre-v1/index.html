@@ -20,6 +20,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -70,7 +71,7 @@
     </header>
 
     <main>
-      <section class="portada">
+      <section class="portada portada-marca">
         <p>
           Alquiler de bicicletas en Medellín, Colombia, te invitamos a conocer.
           Visítanos, mira <a href="#encuentranos">dónde encontrarnos</a>.
@@ -84,7 +85,7 @@
       </section>
 
       <section>
-        <h2>Nuestras rutas</h2>
+        <h2 class="titulo-seccion">Nuestras rutas</h2>
         <div class="container-fluid">
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
             <div class="col">
@@ -121,7 +122,7 @@
       </section>
 
       <section>
-        <h2>¿Quiénes somos?</h2>
+        <h2 class="titulo-seccion">¿Quiénes somos?</h2>
         <p>
           Somos una empresa dedicada al alquiler de bicicletas en Medellín,
           Colombia, contamos con bicicletas de <em>todo</em> tipo para todos,
@@ -131,7 +132,7 @@
       </section>
 
       <section>
-        <h2>Nuestros servicios</h2>
+        <h2 class="titulo-seccion">Nuestros servicios</h2>
         <p>
           Ofrecemos bicicletas de todo tipo para todos los gustos y necesidades.
         </p>
@@ -147,7 +148,7 @@
               alquiler <strong>incluye casco y candado</strong>.
             </p>
             <p>
-              <a href="paginas/tarifas.html" class="btn btn-primary">
+              <a href="paginas/tarifas.html" class="btn btn-naranja">
                 Consulta las tarifas de alquiler</a
               >
             </p>
@@ -161,7 +162,7 @@
             />
             <p>Hacemos recorridos por los barrios de la ciudad de Medellín.</p>
             <p>
-              <a href="paginas/tarifas.html#recorridos" class="btn btn-primary"
+              <a href="paginas/tarifas.html#recorridos" class="btn btn-naranja"
                 >Ver tabla de recorridos y precios</a
               >
             </p>
@@ -181,7 +182,7 @@
               bicicletas.
             </p>
             <p>
-              <a href="paginas/tarifas.html" class="btn btn-primary">
+              <a href="paginas/tarifas.html" class="btn btn-naranja">
                 Taller Básico</a
               >
             </p>
@@ -193,7 +194,7 @@
             <img src="img/bicielectrica.jpg" alt="Bicicletas electricas" />
             <p>Recorre nuestas ciudades con bicletas electrica sin esfuerzo.</p>
             <p>
-              <a href="paginas/tarifas.html" class="btn btn-primary"
+              <a href="paginas/tarifas.html" class="btn btn-naranja"
                 >Ver nuestro precios con las Bicicletas Electricas</a
               >
             </p>
@@ -202,15 +203,15 @@
 
         <h3>Beneficios de alquilar con nosotros</h3>
         <ul>
-          <li>Casco y candado incluidos</li>
-          <li>Bicicletas urbanas, de montaña y eléctricas</li>
-          <li>Recorridos guiados por la ciudad</li>
+          <li><i class="bi bi-shield-check" aria-hidden="true"></i> Casco y candado incluidos</li>
+          <li><i class="bi bi-bicycle" aria-hidden="true"></i> Bicicletas urbanas, de montaña y eléctricas</li>
+          <li><i class="bi bi-map" aria-hidden="true"></i> Recorridos guiados por la ciudad</li>
         </ul>
       </section>
 
 
   <section>
-        <h2>Promociones</h2>
+        <h2 class="titulo-seccion">Promociones</h2>
         <p>
           Aprovecha nuestras promociones y descuentos especiales para alquilar
           bicicletas.
@@ -242,7 +243,7 @@
 
 
       <section>
-        <h2>Nuestra flota</h2>
+        <h2 class="titulo-seccion">Nuestra flota</h2>
         <div class="container-fluid">
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
             <div class="col">
@@ -333,7 +334,7 @@
       </section>
 
       <section>
-        <h2>¿Cómo alquilar?</h2>
+        <h2 class="titulo-seccion">¿Cómo alquilar?</h2>
         <p>Alquilar con nosotros es fácil, sigue estos pasos.</p>
         <ol>
           <li>Elige el tipo de bicicleta y el tiempo de uso.</li>
@@ -352,26 +353,26 @@
       </section>
 
       <section>
-        <h2 id="encuentranos">Encuéntranos</h2>
+        <h2 id="encuentranos" class="titulo-seccion">Encuéntranos</h2>
         <p>Estamos ubicados en el centro, cerca a la catedral.</p>
         <p>
           <a
             href="https://www.google.com/maps/search/?api=1&query=Catedral+Metropolitana+Medellin"
             target="_blank"
-            >Ver ubicación en el mapa</a
+            ><i class="bi bi-geo-alt" aria-hidden="true"></i> Ver ubicación en el mapa</a
           >
         </p>
         <p>
-          Escríbenos a
+          <i class="bi bi-envelope" aria-hidden="true"></i> Escríbenos a
           <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
         </p>
       </section>
     </main>
 
-    <footer>
+    <footer class="pie-sitio">
       <p>Rueda Libre</p>
       <p>
-        Correo:
+        <i class="bi bi-envelope" aria-hidden="true"></i> Correo:
         <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
       </p>
       <p>2026</p>

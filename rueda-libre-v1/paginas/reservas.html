@@ -19,6 +19,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
 
     <title>Reservas | Rueda Libre</title>
@@ -73,7 +74,7 @@
 
       <div class="reserva">
         <section>
-          <h2>Formulario de reserva</h2>
+          <h2 class="titulo-seccion">Formulario de reserva</h2>
           <div class="alert alert-info alert-dismissible fade show" role="alert">
             <strong>Recuerda:</strong> trae tu documento de identidad original el día que recojas la bicicleta.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
@@ -257,7 +258,7 @@
                   required
                 />
                 <label class="form-check-label" for="politicas">Acepto las políticas de alquiler</label>
-                <button type="button" class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#modalPoliticas">
+                <button type="button" class="btn btn-naranja btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#modalPoliticas">
                   Ver políticas
                 </button>
                 <div class="invalid-feedback">
@@ -271,7 +272,7 @@
         </section>
 
         <aside>
-          <h2>Horario de atención</h2>
+          <h2 class="titulo-seccion">Horario de atención</h2>
           <dl>
             <dt>Lunes a viernes</dt>
             <dd>7:00 a. m. a 7:00 p. m.</dd>
@@ -280,7 +281,7 @@
             <dd>6:00 a. m. a 2:00 p. m.</dd>
           </dl>
           <p>
-            Correo de contacto:
+            <i class="bi bi-envelope" aria-hidden="true"></i> Correo de contacto:
             <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
           </p>
         </aside>
@@ -310,10 +311,10 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="pie-sitio">
       <p>Rueda Libre</p>
       <p>
-        Correo:
+        <i class="bi bi-envelope" aria-hidden="true"></i> Correo:
         <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
       </p>
       <p>2026</p>

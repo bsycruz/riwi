@@ -1,7 +1,7 @@
 
 :root {
   
-  --color-verde-ruta: rgb(108, 121, 247);     /* botones  enlaces */
+  --color-verde-ruta: #1E7A4F;     /* botones  enlaces */
   --color-naranja-pedal: #F39A2B;  /* destacados y botones secundarios */
   --color-azul-noche: #14213D;     /* títulos y encabezado */
   --color-crema: #FAF6EF;          /* fondo general */
@@ -27,6 +27,45 @@
   --espacio-sm: 1.5rem;
   --espacio-md: 1rem;
   --espacio-lg: 2.5rem;
+}
+
+  /******** Recueda que en boostrap lo ultimo es lo primero* ********/
+
+:root {
+  --bs-primary: var(--color-verde-ruta);
+  --bs-primary-rgb: 30, 122, 79;
+
+  --bs-body-font-family: var(--fuente-textos);
+
+  --bs-link-color: var(--color-verde-ruta);
+  --bs-link-color-rgb: 30, 122, 79;
+  --bs-link-hover-color: var(--color-azul-noche);
+  --bs-link-hover-color-rgb: 20, 33, 61;
+
+  --bs-border-radius: 0.25rem;
+}
+
+/* Recuerda que es la configuración principal verde de los botones ******/
+.btn-primary {
+  --bs-btn-bg: var(--color-verde-ruta);
+  --bs-btn-border-color: var(--color-verde-ruta);
+  --bs-btn-hover-bg: #1A6843;
+  --bs-btn-hover-border-color: #1A6843;
+  --bs-btn-active-bg: #18623F;
+  --bs-btn-active-border-color: #18623F;
+  --bs-btn-focus-shadow-rgb: 30, 122, 79;
+}
+
+.btn-naranja {
+  --bs-btn-color: var(--color-azul-noche);
+  --bs-btn-bg: var(--color-naranja-pedal);
+  --bs-btn-border-color: var(--color-naranja-pedal);
+  --bs-btn-hover-color: var(--color-azul-noche);
+  --bs-btn-hover-bg: #CF8325;
+  --bs-btn-hover-border-color: #CF8325;
+  --bs-btn-active-color: var(--color-azul-noche);
+  --bs-btn-active-bg: #C27B22;
+  --bs-btn-active-border-color: #C27B22;
 }
 
 header{
@@ -396,4 +435,33 @@ img {
 
 .skip-navigation {
   @include visually-hidden-focusable;
+}
+
+
+.portada-marca {
+  background-color: white;
+  border-left: 8px solid var(--color-naranja-pedal);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo-seccion {
+  color: var(--color-azul-noche);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.pie-sitio {
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.pie-sitio a {
+  color: var(--color-crema);
+}
+
+.pie-sitio a:hover {
+  color: var(--color-naranja-pedal);
 }
