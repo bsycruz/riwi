@@ -416,3 +416,15 @@ img {
   height: auto;
   display: block;
 }
+
+
+
+/**Los botones del carrucel **/
+
+.visually-hidden-title {
+  @include visually-hidden;
+}
+
+.skip-navigation {
+  @include visually-hidden-focusable;
+}
