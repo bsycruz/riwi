@@ -68,3 +68,10 @@ reto 4
 Mobile-firts
 
 Uno de los problemas que tuve fue organzar en los fila-campos "grid-template-columns, donde yo estaba siendo redundante y escribi repeat(2,1fr), cuando solamente utilizando "1fr" era necesario y quedaba listo.
+
+#Semana 3
+
+reto 1 - prototipo nocturno
+
+Se crea la carpeta nocturna con prototipo.html y se carga Tailwind con el script del Play CDN Todo el estilo se hizo con clases en el html sin <style> ni style="".
+
