@@ -1,7 +1,7 @@
 
 :root {
   
-  --color-verde-ruta: #1E7A4F;     /* botones  enlaces */
+  --color-verde-ruta: rgb(108, 121, 247);     /* botones  enlaces */
   --color-naranja-pedal: #F39A2B;  /* destacados y botones secundarios */
   --color-azul-noche: #14213D;     /* títulos y encabezado */
   --color-crema: #FAF6EF;          /* fondo general */
