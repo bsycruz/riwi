@@ -341,30 +341,6 @@ body {
   padding-bottom: 10rem; 
 }
 
-/*** 
-
-.flota{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: var(--espacio-md);
-}
-
-
-
-**/
-  
-.flota .tarjeta{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.galeria{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--espacio-md);
-}
-
 .reserva{
   display: grid;
   grid-template-columns: 1fr;
@@ -388,11 +364,6 @@ body {
     justify-content: space-between;
   }
 
-  .galeria,
-  .flota,
-
-
-
   .fila-campos {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -404,8 +375,6 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .galeria,
-  .flota,
   .contenedor-tarjetas {
     grid-template-columns: repeat(3, 1fr);
   }
