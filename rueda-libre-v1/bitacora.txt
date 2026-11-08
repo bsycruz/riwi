@@ -75,3 +75,14 @@ reto 1 - prototipo nocturno
 
 Se crea la carpeta nocturna con prototipo.html y se carga Tailwind con el script del Play CDN Todo el estilo se hizo con clases en el html sin <style> ni style="".
 
+reto 4 - kit de componentes
+
+Se crea nocturna/componentes.html con los botones, una card, tres alertas (información, éxito y advertencia) y dos campos (correo y celular). La alerta de éxito tiene role="status" para que el lector de pantalla la lea como aviso.
+
+Reglas del kit:
+Para que todo se vea igual deje las mismas clases en todos los componentes.
+Los bordes redondeados son con "rounded-lg" en todo: botones, card, alertas y campos. La imagen de la card va con "rounded-t-lg" para que quede igual arriba.
+El espacio de adentro es "px-6 py-3" en los botones y los campos, y "p-6" en la card y las alertas. Para separar las cosas use "space-y-2" y "space-y-4". La etiqueta del nivel es mas pequeña con "px-3 py-1".
+Los colores son los mismos: el fondo "slate-900", las cajas "slate-800", los bordes "slate-700" y el color principal "amber-400", que en hover cambia a "amber-300".
+En las alertas cada una tiene su color, azul para informacion, verde para exito y amarillo para advertencia, con el borde de la izquierda mas fuerte.
+Tambien todo lo que se usa con el teclado tiene el mismo anillo "focus:ring-4 focus:ring-amber-200" para que se vea cuando se pasa con Tab.
