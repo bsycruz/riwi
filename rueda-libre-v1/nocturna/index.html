@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="bg-slate-900 text-white">
-
+    <header class="py-4">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+            <span class="text-2xl font-bold">Rueda Nocturna</span>
+            <nav class="flex gap-6">
+                <a href="#inicio">inicio</a>
+                <a href="#rutas">rutas</a>
+                <a href="#como-funciona">¿cómo funciona?</a>
+            </nav>
+            <a href="#inscripcion" class="inline-block bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-200">Inscríbete</a>
+              
+    </div>
+    </header>
     <main>
-        <section class="max-w-2xl mx-auto p-8 space-y-6">
-
+        <section id="inicio" class="py-16">
+            <div class="max-w-6xl mx-auto px-6 space-y-6">
             <p class="text-sm font-bold uppercase text-amber-400">Nuevo · Jueves a sábado</p>
             <h1 class="text-5xl font-bold">Rueda Nocturna</h1>
             <p class="text-lg text-gray-300">Descubre Medellín en bici cuando se encienden las luces</p>
@@ -25,13 +36,16 @@
                 <a href="#" class="inline-block bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-200">Ver rutas</a>
                 <a href="#" class="inline-block bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-200">Más información</a>
             </div>
-
+        </div>
         </section>
 
-        <section class="max-w-2xl mx-auto p-8 space-y-6">
+        <section id="rutas" class="py-16">
+            <div class="max-w-6xl mx-auto px-6 space-y-6">
 
             <h2 class="text-3xl font-bold">Rutas</h2>
             <p class="text-gray-300">Todas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+                        <!-- Aqui es donde  Se realiza la division de las 3 Card-->
+            <div class="grid grid-cols-3 gap-6">
 
             <div class="w-full bg-slate-800 border border-slate-700 rounded-lg shadow">
                 <img src="img/luces-del-centro.jpg" alt="Guía con chaleco reflectivo hablando con un grupo de ciclistas en una plaza del centro" class="w-full h-48 object-cover rounded-t-lg">
@@ -78,8 +92,80 @@
                 </div>
             </div>
 
-        </section>
-    </main>
+            </div>
 
+            </div>
+        </section>
+    <section id="como-funciona" class="py-16"> <!--  Aqui esta la card de **como funciona*** es ,--> 
+            <div class="max-w-6xl mx-auto px-6 space-y-6">
+
+                <h2 class="text-3xl font-bold">¿Cómo funciona?</h2> <!-- En esta seccion Esta cerca al footer -->
+
+                <div class="grid grid-cols-4 gap-6"> <!--***Esto me permite crear las 4 columnas del mismo ancho, con el gap podemos modifcar el ancho de cada contenedor que tiene la informacion -->
+
+                    <div>
+                        <p class="text-3xl font-bold text-amber-400">1</p>
+                        <h3 class="text-xl font-bold">Elige tu ruta</h3>
+                        <p class="text-gray-300">Escoge entre las tres rutas nocturnas.</p>
+                    </div>
+
+                    <div>
+                        <p class="text-3xl font-bold text-amber-400">2</p>
+                        <h3 class="text-xl font-bold">Inscríbete</h3>
+                        <p class="text-gray-300">Reserva tu cupo en línea.</p>
+                    </div>
+
+                    <div>
+                        <p class="text-3xl font-bold text-amber-400">3</p>
+                        <h3 class="text-xl font-bold">Recoge tu equipo</h3>
+                        <p class="text-gray-300">Pasa por la sede por tu bici y tu casco.</p>
+                    </div>
+
+                    <div>
+                        <p class="text-3xl font-bold text-amber-400">4</p>
+                        <h3 class="text-xl font-bold">Rueda</h3>
+                        <p class="text-gray-300">Sal con el grupo y disfruta la ciudad.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+            <!-- Esta terminacion hara que cambie de color, entre más algo "800" hara que quede más oscuro y "slate-200" hara que sea más claro, casi blanco. -->
+        <section id="inscripcion" class="py-16 bg-slate-800"> <!--  Aqui esta la card de **como funciona*** es ,--> 
+                <div class="max-w-6xl mx-auto px-6 space-y-6">
+
+                    <h2 class="text-3xl font-bold">¿Listo para rodar?</h2> <!-- En esta seccion Esta cerca al footer -->
+                    <p class="text-gray-300">Reserva tu cupo antes de que se llene</p>
+                     
+                    <a href="#" class="inline-block bg-amber-400 text-slate-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-200">Inscríbete</a> <!-- Este es el boton que queda de color amarillo-->
+                </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="py-8">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between">
+
+            <div>
+                <p class="font-bold">Correo</p>
+                <p class="text-gray-300">hola@ruedanocturna.example</p>
+            </div>
+
+            <div>
+                <p class="font-bold">Enlaces</p>
+                <a href="#ruta">Ruta</a>
+                <a href="#como-funciona">¿Cómo funciona?</a>
+            </div>
+
+            <div>
+                <p class="font-bold">Contacto</p>
+                <p class="text-gray-300">+1 (123) 456-7890  </p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
