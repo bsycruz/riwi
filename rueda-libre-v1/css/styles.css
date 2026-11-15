@@ -6,6 +6,7 @@
   --color-azul-noche: #14213D;     /* títulos y encabezado */
   --color-crema: #FAF6EF;          /* fondo general */
   --color-gris-asfalto: #5B6470;   /* texto secundario */
+  --color-amarillo-farol: #FFD166; /* campaña Rueda Nocturna */
 
   /* Roles */
   --color-fondo: var(--color-crema);

@@ -9,14 +9,16 @@
 <body class="bg-crema text-azul-noche dark:bg-azul-noche dark:text-crema">
     <header class="py-4">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <span class="text-2xl font-bold">Rueda Nocturna</span>
+            <a href="../index.html" class="text-2xl font-bold">Rueda Nocturna</a>
             <nav class="hidden md:flex gap-6">
                 <a href="#inicio">inicio</a>
                 <a href="#rutas">rutas</a>
                 <a href="#como-funciona">¿cómo funciona?</a>
             </nav>
-            <a href="#inscripcion" class="inline-block bg-amarillo-farol text-azul-noche font-bold px-6 py-3 rounded-lg shadow hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-verde-ruta dark:focus:ring-crema">Inscríbete</a>
-              
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="../paginas/reservas.html" class="inline-block bg-amarillo-farol text-azul-noche font-bold px-6 py-3 rounded-lg shadow hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-verde-ruta dark:focus:ring-crema">Reserva tu bici</a>
+                <a href="#inscripcion" class="inline-block bg-amarillo-farol text-azul-noche font-bold px-6 py-3 rounded-lg shadow hover:bg-naranja-pedal focus:outline-none focus:ring-4 focus:ring-verde-ruta dark:focus:ring-crema">Inscríbete</a>
+            </div>
     </div>
     </header>
     <main>
@@ -239,19 +241,22 @@
         <div class="max-w-6xl mx-auto px-6 flex justify-between">
 
             <div>
-                <p class="font-bold">Correo</p>
-                <p class="text-gris-asfalto dark:text-crema">hola@ruedanocturna.example</p>
+                <p class="font-bold">Rueda Libre</p>
+                <p class="text-gris-asfalto dark:text-crema">Campaña Rueda Nocturna</p>
+                <p class="text-gris-asfalto dark:text-crema">2026</p>
             </div>
 
             <div>
                 <p class="font-bold">Enlaces</p>
-                <a href="#rutas">Ruta</a>
-                <a href="#como-funciona">¿Cómo funciona?</a>
+                <a href="#rutas" class="block">Rutas</a>
+                <a href="#como-funciona" class="block">¿Cómo funciona?</a>
+                <a href="../index.html" class="block">Sitio Rueda Libre</a>
+                <a href="../paginas/reservas.html" class="block">Reservas</a>
             </div>
 
             <div>
                 <p class="font-bold">Contacto</p>
-                <p class="text-gris-asfalto dark:text-crema">+1 (123) 456-7890  </p>
+                <a href="mailto:hola@ruedalibre.example" class="block">hola@ruedalibre.example</a>
             </div>
 
         </div>
