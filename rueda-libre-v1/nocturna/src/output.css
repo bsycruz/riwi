@@ -306,7 +306,7 @@
   .border-azul-noche {
     border-color: var(--color-azul-noche);
   }
-  .border-gris-asfalto {
+  shadow.border-gris-asfalto {
     border-color: var(--color-gris-asfalto);
   }
   .border-naranja-pedal {
