@@ -2,4 +2,6 @@
 
 Al momento de buscar e inspeccionar la pagina, no queda responsive las tarjetas de eligir ruta "luna en las palmas" y las demás, las card quedan en desnivel.
 
-los 3 botones no quedan en su lugar, además el titulo "**<h1 class="text-5xl font-bold">Rueda Nocturna</h1>**" queda descuadrado.
+los 3 botones no quedan en su lugar, además el titulo "**<h1 class="text-5xl font-bold">Rueda Nocturna</h1>**" queda descuadrado.}
+
+Al momento que hago las configuraciones la pagina es responsive en las tres medidas.

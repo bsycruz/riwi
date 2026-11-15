@@ -86,3 +86,5 @@ El espacio de adentro es "px-6 py-3" en los botones y los campos, y "p-6" en la 
 Los colores son los mismos: el fondo "slate-900", las cajas "slate-800", los bordes "slate-700" y el color principal "amber-400", que en hover cambia a "amber-300".
 En las alertas cada una tiene su color, azul para informacion, verde para exito y amarillo para advertencia, con el borde de la izquierda mas fuerte.
 Tambien todo lo que se usa con el teclado tiene el mismo anillo "focus:ring-4 focus:ring-amber-200" para que se vea cuando se pasa con Tab.
+
+
